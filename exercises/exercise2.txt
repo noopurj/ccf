@@ -9,6 +9,23 @@
 		<button type="button">Play!</button>
 8. Save the page and notice that you can see the button but when you click it, nothing happens. This is because we have not added any logic for the computer to choose the image. For that we need <script>.  
 9. Add onClick attribute to the button so that it knows what to do when we click the button. Edit your button tag like this:
-		<button type="button" onClick="console.log('Hi, I am your computer!')">Play!</button>
+		<button type="button" onClick="console.log('Hi, I am your computer!');">Play!</button>
 10. Save the file and click the play button. What happens? Where does the "Hi, I am your computer!" message go?
-11. This is a very important skill as a computer genius that you should know, its know as debbugging. 
+11. Let us try to debug this. Press Ctrl+Shift+I on your internet browser (Developer tools option) and look for console tab. Can you see your message there? If not, reach out to any of the volunteers for help. 
+12. Now we want the onClick attribute to generate computer's response. For that let us create a method. Method is a like a procedure that we need to do to generate output. Like in science experiments, you have some methods to generate water from hydrogen and oxygen. 
+13. Replace the line after onClick by 
+		computerPlay()
+14. Now add <script> tag after your <button> and add the following:
+		function computerPlay(){
+			console.log('Hi, I am your computer!');
+		}
+15. Save your file and see that the computer does the exact same thing as before but now we have a method (function) to do that instead of in the button tag. 
+16. Now let us break down the task we need to work on. 
+	- We have 3 images - rock, paper and scissors. 
+	- We need the computer to choose one of the images randomly when we click the play button.  
+17. So, first what we need to do is, we need to create a way to get random image. You can use this method called Math.random() that can help you get a random value between 0 to 1. 
+18. Notice the use of method. Once you create a method, it can be called or used again anywhere else, depending on the people who created the method. This Math.random() method is created by someone and now we can use it. 
+19. Let us print out the random number generated using this function. Remember when we created a name variable in the last exercise. Now we need to create a variable called random to save the random number generated from the Math.random() function. Therefore, add the following line to save the random number. And then console.log the random number the same way we printed our name out in the previous exercise.
+		var random = Math.random()
+20. Hit the play button multiple times and you should be able to see that the number is different everytime. 
+21. 		

@@ -17,7 +17,7 @@ Remember to save your file. Everytime, you make a change, save your file.
 2. Notice the "script" after Java? That is the next tag we will work with. Add <script> tag in the <body> section and add 
 			prompt("What is your name?", "ABC XYZ");
 3. Save your file and see what happens when you open this file on your browser. 
-4. Now, let us make the computer remember our name by saving our name. Just add the following, and your name will be saved in the "name".
+4. Now, let us make the computer remember our name by saving our name. Just add the following, and your name will be saved in the variable "name".
 			var name = prompt("What is your name?", "ABC XYZ");	
 5. Now, add the following and it will display your name in the body. 
 			document.getElementById("name").innerHTML = "Hello " + name;
