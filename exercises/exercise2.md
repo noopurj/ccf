@@ -29,14 +29,16 @@ console.log('Hi, I am your computer!');
 17. So, first what we need to do is, we need to create a way to get random image. You can use this method called Math.random() that can help you get a random value between 0 to 1. 
 18. Notice the use of method. Once you create a method, it can be called or used again anywhere else, depending on the people who created the method. This `Math.random()` method is created by someone and now we can use it. 
 19. Let us print out the random number generated using this function. Remember when we created a name variable in the last exercise. Now we need to create a variable called random to save the random number generated from the `Math.random()` function. Therefore, add the following line to save the random number. And then console.log the random number the same way we printed our name out in the previous exercise.
-		`var random = Math.random()`
+```javascript
+var random = Math.random()
+```
 20. Hit the play button multiple times and you should be able to see that the number is different everytime. 
 21. Now instead of printing this number out in the console log, let us use this number to get computers choice. There are 3 different possiblities for the choice, therefore, we can divide the number this method can generate into 3 portions like 0.00-0.33, 0.34-0.66 and 0.67-1.00.
 When the number is in 0.00-0.33, we will choose rock. When the number is between 0.34-0.66, we will choose paper. And at last, we will choose scissors. 
 22. Remember the if-else logic we did in scratch? We will use similar concept to select the computer's choice here. 
 
 ```javascript
-let computerChoice = "rock";
+var computerChoice = "rock";
 if (randomNumber < 0.34) {
 computerChoice = "rock";
 } else if(randomNumber <= 0.67) {
@@ -46,7 +48,7 @@ computerChoice = "scissors";
 }
 ```
 	 
-23. Now we will print the computersChoice variable in the console log and see if the computer is cheating or it is sending random answer everything you hit play. 
+23. Now we will print the computersChoice variable in the console log and see if the computer is cheating or it is sending random answer everytime you hit play. 
 24. We do not want to always go to console log to print the result. Let us use the way we printed out our name in last exercise to print out computers choice. 
 		`document.getElementById("computer-choice").innerHTML = "Computer chose " + computerChoice + "!";`
 25. Hit save and see if you can see the computers choice on your webpage when you click play. Notice, that you cannot see it yet. Let us find out why. 
