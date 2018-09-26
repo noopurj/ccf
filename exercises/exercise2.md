@@ -16,9 +16,13 @@
 13. Replace the line after onClick by 
 		`computerPlay()`
 14. Now add `<script>` tag after your `<button>` and add the following:
-		`function computerPlay(){
+
+		```
+		function computerPlay(){
 			console.log('Hi, I am your computer!');
-		}`
+		}
+		```
+		
 15. Save your file and see that the computer does the exact same thing as before but now we have a method (function) to do that instead of in the button tag. 
 16. Now let us break down the task we need to work on. 
 	- We have 3 images - rock, paper and scissors. 
@@ -31,7 +35,9 @@
 21. Now instead of printing this number out in the console log, let us use this number to get computers choice. There are 3 different possiblities for the choice, therefore, we can divide the number this method can generate into 3 portions like 0.00-0.33, 0.34-0.66 and 0.67-1.00.
 When the number is in 0.00-0.33, we will choose rock. When the number is between 0.34-0.66, we will choose paper. And at last, we will choose scissors. 
 22. Remember the if-else logic we did in scratch? We will use similar concept to select the computer's choice here. 
-		`let computerChoice = "rock";
+
+	```
+	    let computerChoice = "rock";
 
 	    if (randomNumber < 0.34) {
 	      computerChoice = "rock";
@@ -40,7 +46,8 @@ When the number is in 0.00-0.33, we will choose rock. When the number is between
 	    } else {
 	      computerChoice = "scissors";
 	    }
-	    `
+	 ```
+	 
 23. Now we will print the computersChoice variable in the console log and see if the computer is cheating or it is sending random answer everything you hit play. 
 24. We do not want to always go to console log to print the result. Let us use the way we printed out our name in last exercise to print out computers choice. 
 		`document.getElementById("computer-choice").innerHTML = "Computer chose " + computerChoice + "!";`
@@ -52,7 +59,9 @@ When the number is in 0.00-0.33, we will choose rock. When the number is between
 29. Add a section to display computers choice image. 
 		`<div id="computer-choice-image"></div>`
 30. Now add the following to display the image according to the choice of the computer.
-		`let computerChoiceImage = '<img src="images/rock.jpeg" width="500px"/>';
+		
+		```
+	    let computerChoiceImage = '<img src="images/rock.jpeg" width="500px"/>';
 
 	    if(computerChoice === "paper") {
 	      computerChoiceImage = '<img src="images/paper.jpeg" width="500px"/>';
@@ -63,5 +72,6 @@ When the number is in 0.00-0.33, we will choose rock. When the number is between
 
 	    document.getElementById("computer-choice-image").innerHTML =
 	      computerChoiceImage;
-	      `
+	      ```
+	      
 31. Hit save and play with the computer!
