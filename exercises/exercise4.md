@@ -1,6 +1,6 @@
 # Exercise 4
 
-Now it is time to decide who wins! The computer or you. 
+1. Now it is time to decide who wins! The computer or you. 
 There are 3 possible choices for both you and the computer. Based on that there are only these possible outcoumes -
 
 | You      | Computer | Outcome  |
@@ -14,3 +14,5 @@ There are 3 possible choices for both you and the computer. Based on that there 
 | Scissors | Rock     | You lose |
 | Scissors | Paper    | You win  |
 | Scissors | Scissors | Draw     |
+
+2. After the computer chooses, we need to decide who wins.  
