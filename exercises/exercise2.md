@@ -13,15 +13,14 @@
 10. Save the file and click the play button. What happens? Where does the "Hi, I am your computer!" message go?
 11. Let us try to debug this. Press `Ctrl+Shift+I` on your internet browser (Developer tools option) and look for console tab. Can you see your message there? If not, reach out to any of the volunteers for help. 
 12. Now we want the onClick attribute to generate computer's response. For that let us create a method. Method is a like a procedure that we need to do to generate output. Like in science experiments, you have some methods to generate water from hydrogen and oxygen. 
-13. Replace the line after onClick by 
-		`computerPlay()`
+13. Replace the line after `onClick` by `computerPlay()`
 14. Now add `<script>` tag after your `<button>` and add the following:
 
-		```
-		function computerPlay(){
-			console.log('Hi, I am your computer!');
-		}
-		```
+```javascript
+function computerPlay(){
+console.log('Hi, I am your computer!');
+}
+```
 		
 15. Save your file and see that the computer does the exact same thing as before but now we have a method (function) to do that instead of in the button tag. 
 16. Now let us break down the task we need to work on. 
@@ -36,17 +35,16 @@
 When the number is in 0.00-0.33, we will choose rock. When the number is between 0.34-0.66, we will choose paper. And at last, we will choose scissors. 
 22. Remember the if-else logic we did in scratch? We will use similar concept to select the computer's choice here. 
 
-	```
-	    let computerChoice = "rock";
-
-	    if (randomNumber < 0.34) {
-	      computerChoice = "rock";
-	    } else if(randomNumber <= 0.67) {
-	      computerChoice = "paper";
-	    } else {
-	      computerChoice = "scissors";
-	    }
-	 ```
+```javascript
+let computerChoice = "rock";
+if (randomNumber < 0.34) {
+computerChoice = "rock";
+} else if(randomNumber <= 0.67) {
+computerChoice = "paper";
+} else {
+computerChoice = "scissors";
+}
+```
 	 
 23. Now we will print the computersChoice variable in the console log and see if the computer is cheating or it is sending random answer everything you hit play. 
 24. We do not want to always go to console log to print the result. Let us use the way we printed out our name in last exercise to print out computers choice. 
@@ -60,18 +58,15 @@ When the number is in 0.00-0.33, we will choose rock. When the number is between
 		`<div id="computer-choice-image"></div>`
 30. Now add the following to display the image according to the choice of the computer.
 		
-		```
-	    let computerChoiceImage = '<img src="images/rock.jpeg" width="500px"/>';
-
-	    if(computerChoice === "paper") {
-	      computerChoiceImage = '<img src="images/paper.jpeg" width="500px"/>';
-	    }
-	    else if(computerChoice === "scissors") {
-	      computerChoiceImage = '<img src="images/scissors.jpeg" width="500px"/>';
-	    }
-
-	    document.getElementById("computer-choice-image").innerHTML =
-	      computerChoiceImage;
-	      ```
-	      
+```javascript
+let computerChoiceImage = '<img src="images/rock.jpeg" width="500px"/>';
+if(computerChoice === "paper") {
+computerChoiceImage = '<img src="images/paper.jpeg" width="500px"/>';
+}
+else if(computerChoice === "scissors") {
+computerChoiceImage = '<img src="images/scissors.jpeg" width="500px"/>';
+}
+document.getElementById("computer-choice-image").innerHTML = computerChoiceImage;
+```
+	    
 31. Hit save and play with the computer!
