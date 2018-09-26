@@ -8,12 +8,12 @@
 7. Add a `<button>` to our webpage so that when we click the button, we can make the computer choose which image (Rock, Paper or Scissors?) does it want. 
 		`<button type="button">Play!</button>`
 8. Save the page and notice that you can see the button but when you click it, nothing happens. This is because we have not added any logic for the computer to choose the image. For that we need `<script>`.  
-9. Add onClick attribute to the button so that it knows what to do when we click the button. Edit your button tag like this:
+9. Add onclick attribute to the button so that it knows what to do when we click the button. Edit your button tag like this:
 		`<button type="button" onclick="console.log('Hi, I am your computer!');">Play!</button>`
 10. Save the file and click the play button. What happens? Where does the "Hi, I am your computer!" message go?
 11. Let us try to debug this. Press `Ctrl+Shift+I` on your internet browser (Developer tools option) and look for console tab. Can you see your message there? If not, reach out to any of the volunteers for help. 
-12. Now we want the onClick attribute to generate computer's response. For that let us create a method. Method is a like a procedure that we need to do to generate output. Like in science experiments, you have some methods to generate water from hydrogen and oxygen. 
-13. Replace the line after `onClick` by `computerPlay()`
+12. Now we want the onclick attribute to generate computer's response. For that let us create a method. Method is a like a procedure that we need to do to generate output. Like in science experiments, you have some methods to generate water from hydrogen and oxygen. 
+13. Replace the line after `onclick` by `computerPlay()`
 14. Now add `<script>` tag after your `<button>` and add the following:
 
 ```javascript
