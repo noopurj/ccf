@@ -61,7 +61,7 @@ computerChoice = "scissors";
 30. Now add the following to display the image according to the choice of the computer.
 		
 ```javascript
-let computerChoiceImage = '<img src="images/rock.jpeg" width="500px"/>';
+var computerChoiceImage = '<img src="images/rock.jpeg" width="500px"/>';
 if(computerChoice === "paper") {
 computerChoiceImage = '<img src="images/paper.jpeg" width="500px"/>';
 }
