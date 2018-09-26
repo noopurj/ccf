@@ -3,9 +3,9 @@
 
 ```html
 <h3>Choose one: </h3>
-<button type="button" onClick="playGame('rock')" >Rock</button>
-<button type="button" onClick="playGame('paper')" >Paper</button>
-<button type="button" onClick="playGame('scissors')" >Scissors</button>
+<button type="button">Rock</button>
+<button type="button">Paper</button>
+<button type="button">Scissors</button>
 ```
 
-2. Notice the method playGame('rock') or playGame('scissor'), that is to indicate
+2. 
