@@ -1,4 +1,5 @@
-# Part 1 
+# Part 1
+
 ## HTML
 1. Create a new file and save it with the extension .html. The computer is really smart and when you save a file with ".html", it knows what to do with that "html"
 2. Try opening this new file on internet browser (Chrome, IE etc)
