@@ -1,6 +1,7 @@
 # Part 1
 
 ## HTML
+
 1. Create a new file and save it with the extension .html. The computer is really smart and when you save a file with ".html", it knows what to do with that "html"
 2. Try opening this new file on internet browser (Chrome, IE etc)
 3. Now add a header with a creative title for your page. When you add a <head> tag in HTML you can add a `<title>` tag within the head. This will then use this title for the top of the browser window. 
@@ -13,11 +14,13 @@ Remember to save your file. Everytime, you make a change, save your file.
 9. Add empty links to other exercises by using `<a>`.
   
 ## CSS
+
 1. Beautify this page by adding style to our body. By adding this, we will be able to control the look and feel of the page how ever we want.
 2. Each section of body can be divided into divisions or `<div>` and can be styled separately. Enclose different parts of the webpage inside `<div>` and style them differently. (color, background-color, align, font) 
 3. Open your browser console and play around with the styles to see what your page will look like then go ahead and make those changes in your file.
   
 ## JavaScript
+
 1. Moving on to some even more exciting part, let us now let us try and make the computer ask us what our name is.
 2. Notice the "script" after Java? That is the next tag we will work with. Add `<script>` tag in the `<body>`section and add `prompt("What is your name?", "ABC XYZ");`
 3. Save your file and see what happens when you open this file on your browser. 
