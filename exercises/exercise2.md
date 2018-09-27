@@ -4,7 +4,7 @@
 3. We will add these to our web page. 
 4. Can you google search how to add images to your webpage? 
 5. Save your project and make sure that you can see the images through your webpage. 
-6. Now let us edit the images size and make them appear in the center using css.
+6. Now let us edit the images size and make them appear in the center using style attribute.
 7. Add a `<button>` to our webpage so that when we click the button, we can make the computer choose which image (Rock, Paper or Scissors?) does it want. 
 		`<button type="button">Play!</button>`
 8. Save the page and notice that you can see the button but when you click it, nothing happens. This is because we have not added any logic for the computer to choose the image. For that we need `<script>`.  
