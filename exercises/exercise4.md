@@ -26,11 +26,11 @@ if(userChoice == 'rock') {
         result = 'Draw!';
     }
 
-    else if(userChoice == 'paper') {
+    else if(computerChoice == 'paper') {
         result = 'You lose!';
     }
 
-    else if(userChoice == 'scissors') {
+    else if(computerChoice == 'scissors') {
         result = 'You win!';
     }
 }
